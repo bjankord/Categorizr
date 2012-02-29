@@ -15,43 +15,43 @@ You can load anything you want in between if statments, be it markup, styles, sc
 With this, you can conditonally load resources based on the cateogry the device falls into.
 -->
 
-<?php if (mobile()) { ?>
+<?php if (isMobile()) { ?>
 This device is a mobile
 <br />
 <?php } ?>
 
-<?php if (tablet()) { ?>
+<?php if (isTablet()) { ?>
 This device is tablet
 <br />
 <?php } ?>
 
-<?php if (desktop()) { ?>
+<?php if (isDesktop()) { ?>
 This device is a desktop
 <br />
 <?php } ?>
 
-<?php if (tv()) { ?>
+<?php if (isTV()) { ?>
 This device is a TV
 <br />
 <?php } ?>
 
 
-<?php if (!mobile()) { ?>
+<?php if (!isMobile()) { ?>
 This device is <span class="not">not</span> a mobile
 <br />
 <?php } ?>
 
-<?php if (!tablet()) { ?>
+<?php if (!isTablet()) { ?>
 This device is <span class="not">not</span> a tablet
 <br />
 <?php } ?>
 
-<?php if (!desktop()) { ?>
+<?php if (!isDesktop()) { ?>
 This device is <span class="not">not</span> a desktop
 <br />
 <?php } ?>
 
-<?php if (!tv()) { ?>
+<?php if (!isTV()) { ?>
 This device is <span class="not">not</span> a tv
 <br />
 <?php } ?>
