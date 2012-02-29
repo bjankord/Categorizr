@@ -29,7 +29,7 @@ function categorizr(){
 $catergorize_tablets_as_desktops = FALSE;  //If TRUE, tablets will be categorized as desktops
 $catergorize_tvs_as_desktops     = FALSE;  //If TRUE, smartTVs will be categorized as desktops
 
-// End Categorizr Options ----------------------------------------------------------------------------------------------------------------- 
+// End Categorizr Options --------------------------------------------------------------------------------------------------------------
 
 // Category name - In the event the script is already using 'category' in the session variables, you could easily change it by only needing to change this value.
 $category = 'category';
