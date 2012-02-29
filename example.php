@@ -11,7 +11,7 @@
 
 <body>
 <!--
-You can load anything you want inbetween if statments, be it markup, styles, scripts, etc.
+You can load anything you want in between if statments, be it markup, styles, scripts, etc.
 With this, you can conditonally load resources based on the cateogry the device falls into.
 -->
 
