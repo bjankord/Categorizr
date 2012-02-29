@@ -34,30 +34,30 @@ $catergorize_tvs_as_desktops     = FALSE;  //If TRUE, smartTVs will be categoriz
 $ua = $_SERVER['HTTP_USER_AGENT'];
 session_start();
 
-//Check to see if device type is set in query string
+// Check to see if device type is set in query string
 if(isset($_GET["view"])){
 	$view = $_GET["view"];
-	//If view=desktop set in your query string
+	// If view=desktop set in your query string
 	if ($view == "desktop")
 	{
 		$_SESSION['category'] = "desktop";
 	} 
-	//If view=tablet set in your query string
+	// If view=tablet set in your query string
 	else if ($view == "tablet")
 	{
 		$_SESSION['category'] = "tablet";
 	} 
-	//If view=tablet set in your query string
+	// If view=tablet set in your query string
 	else if ($view == "tv")
 	{
 		$_SESSION['category'] = "tv";
 	} 
-	//If view=mobile set in your query string
+	// If view=mobile set in your query string
 	else if ($view == "mobile")
 	{
 		$_SESSION['category'] = "mobile";
 	}
-}//End Query String check
+}// End Query String check
 
 // If session not yet set, check user agents
 if(!isset($_SESSION['category'])){
