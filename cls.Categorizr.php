@@ -24,7 +24,13 @@
 * 
 * 2012-03-12
 * Made a static class out of original code // https://github.com/H-Max/Categorizr
-* 
+* Just include this class in your php file and use
+* CATEGORIZR::getDeviceCategory()
+* to read userAgent and grab the deviceCategory in : 
+* CATEGORIZR::$userAgent
+* CATEGORIZR::$deviceCategory
+*
+* Use CATEGORIZR::$useSession = true; before calling getDeviceCategory if you want to use session storage directly in the class (rather than using you own session handler)
 **/
 
 
@@ -187,8 +193,8 @@ class categorizr{
 		if (isset($_SESSION[self::$sessionPath]))
 			unset($_SESSION[self::$sessionPath]);
 		
-		self::$deviceCategory = self::_DEFAULT_CATEGORY;
-		self::$userAgent = self::_DEFAULT_USERAGENT;
+		self::$deviceCategory = self::_CATEGORY_MOBILE;
+		self::$userAgent = '';
 	}
 }
 
