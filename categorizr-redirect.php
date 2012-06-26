@@ -154,7 +154,6 @@ if ($catergorize_tvs_as_desktops && $_SESSION[$category] == "tv"){
 
 // Sets $device = to what category UA falls into
 $device = $_SESSION[$category];
-return $device;
 
 // Redirect
 if ($device == 'mobile') {
