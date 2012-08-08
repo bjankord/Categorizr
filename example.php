@@ -1,4 +1,4 @@
-<?php include("categorizr/categorizr.php");?>
+<?php include("categorizr.php");?>
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8" />
