@@ -35,7 +35,11 @@ $catergorize_tvs_as_desktops     = FALSE;  //If TRUE, smartTVs will be categoriz
 $category = 'category';
 
 //Set User Agent = $ua
-$ua = $_SERVER['HTTP_USER_AGENT'];
+if(isset($_SERVER['HTTP_USER_AGENT'])) {
+	$ua = $_SERVER['HTTP_USER_AGENT'];	
+} else {
+	$ua = '';
+}
 
 // Check if session has already started, otherwise E_NOTICE is thrown
 if (session_id() == "")
