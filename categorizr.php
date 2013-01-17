@@ -163,34 +163,18 @@ categorizr();
  
 // Returns true if desktop user agent is detected
 function isDesktop(){
-	$device = categorizr();
-	if($device == "desktop"){
-		return TRUE;
-	}
-	return FALSE;
+	return categorizr() == 'desktop';
 }
 // Returns true if tablet user agent is detected
 function isTablet(){
-	$device = categorizr();
-	if($device == "tablet"){
-		return TRUE;
-	}
-	return FALSE;
+	return categorizr() == 'tablet';
 }
 // Returns true if tablet user agent is detected
 function isTV(){
-	$device = categorizr();
-	if($device == "tv"){
-		return TRUE;
-	}
-	return FALSE;
+	return categorizr() == 'tv';
 }
 // Returns true if mobile user agent is detected
 function isMobile(){
-	$device = categorizr();
-	if($device == "mobile"){
-		return TRUE;
-	}
-	return FALSE;
+	return categorizr() == 'mobile';
 }
 ?>
