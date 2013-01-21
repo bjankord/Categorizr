@@ -80,7 +80,7 @@ if(!isset($_SESSION[$category])){
 		$_SESSION[$category] = "tv";
 	}  
 	// Check if user agent is a Tablet
-	else if((preg_match('/iP(a|ro)d/i', $ua)) || (preg_match('/tablet/i', $ua)) && (!preg_match('/RX-34/i', $ua)) || (preg_match('/FOLIO/i', $ua)))
+	else if((preg_match('/iP(a|o)d/i', $ua)) || (preg_match('/tablet/i', $ua)) && (!preg_match('/RX-34/i', $ua)) || (preg_match('/FOLIO/i', $ua)))
 	{
 		$_SESSION[$category] = "tablet";
 	}
